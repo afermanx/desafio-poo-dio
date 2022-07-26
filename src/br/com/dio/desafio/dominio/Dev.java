@@ -62,7 +62,6 @@ public class Dev {
         this.conteudosConcluidos = conteudosConcluidos;
     }
 
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -70,7 +69,6 @@ public class Dev {
         return Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(conteudosConcluidos, dev.conteudosConcluidos);
     }
 
-    @Override
     public int hashCode() {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
