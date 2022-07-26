@@ -16,9 +16,6 @@ public class Room {
     private Set<Bootcamp> bootcamps = new LinkedHashSet<>();
 
     private Set<Bootcamp> bootcampsRegistered = new LinkedHashSet<>();
-
-
-
     public void sendMessage(String message, Dev devMessage, Bootcamp bootcampRegistered) {
         this.message = message;
         this.devMessage.add(devMessage);
@@ -34,7 +31,6 @@ public class Room {
         );
 
     }
-
     public Set<Bootcamp> getBootcampsRegistered() {
         return bootcampsRegistered;
     }
